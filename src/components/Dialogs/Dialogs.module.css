@@ -1,0 +1,10 @@
+.item,
+.message > p {
+  margin: 0;
+  padding: 0;
+}
+
+.dialogs {
+  display: flex;
+  justify-content: space-evenly;
+}
