@@ -1,9 +1,13 @@
-import dialogitem from './DialogItem.module.css'
+import { NavLink } from 'react-router-dom'
+import dialogItem from './DialogItem.module.css'
 
 const DialogItem = (props) => {
+  let path = '/dialogs/' + props.id
   return (
     <div>
-      <p className={dialogitem.name}>{props.name}</p>
+      <NavLink to={path}>
+        <p className={dialogItem.dialog}> {props.name} </p>
+      </NavLink>
     </div>
   )
 }
